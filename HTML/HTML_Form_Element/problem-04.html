@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head><title>Leave Form</title></head>
+<body>
+<h1>Employee Leave Request</h1>
+<p>Fill this form to take leave.</p>
+
+<table border="1">
+<tr><th>Leave</th><th>Use</th></tr>
+<tr><td>Casual</td><td>Personal work</td></tr>
+<tr><td>Sick</td><td>Health problem</td></tr>
+<tr><td>Earned</td><td>Holiday</td></tr>
+</table><br>
+
+<form>
+Name: <input type="text" name="name" required><br><br>
+Employee ID: <input type="text" name="id" maxlength="10" required><br><br>
+Email: <input type="email" name="email" required><br><br>
+Department: <select name="department" required>
+<option>IT</option><option>HR</option><option>Sales</option><option>Finance</option><option>Marketing</option><option>Production</option></select><br><br>
+Leave: <select name="leave">
+<option>Casual Leave</option><option>Sick Leave</option><option>Earned Leave</option><option>Work From Home</option><option>Other</option></select><br><br>
+Start: <input type="date" name="start" required>
+End: <input type="date" name="end" required><br><br>
+Days: <input type="number" name="days" min="1" max="30"><br><br>
+Reachable: <input type="radio" name="reach" value="yes">Yes
+<input type="radio" name="reach" value="no">No<br><br>
+Reason: <textarea name="reason"></textarea><br><br>
+Other Contact: <input type="tel" name="contact" pattern="[0-9]{10}"><br><br>
+Document: <input type="file" name="file"><br><br>
+<input type="checkbox" name="agree" required> I confirm this is correct.<br><br>
+<input type="submit" value="Submit"> <input type="reset" value="Reset">
+</form>
+</body>
+</html>
