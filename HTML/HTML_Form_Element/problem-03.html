@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head><title>Course Enrollment</title></head>
+<body>
+
+<h1>Online Course Enrollment</h1>
+<p>Register to enroll in our technical courses.</p>
+<img src="course.jpg" alt="Online Learning" width="150">
+<p><a href="courses.html">View Course Information</a></p>
+
+<form>
+<label>Name: <input type="text" name="name" minlength="3" maxlength="50" required></label><br>
+<label>Email: <input type="email" name="email" required></label><br>
+<label>Password: <input type="password" name="password" minlength="6" required></label><br>
+<label>Mobile: <input type="tel" name="mobile" pattern="[0-9]{10}" required></label><br>
+<label>DOB: <input type="date" name="dob" required></label><br>
+
+<label>Course:
+<select name="course" required>
+<option value="java">Java</option><option value="python">Python</option>
+<option value="web">Web Development</option><option value="ds">Data Structures</option>
+<option value="db">Database</option><option value="ai">Artificial Intelligence</option>
+</select></label><br>
+
+<label>Batch:
+<select name="batch"><option value="morning">Morning</option>
+<option value="evening">Evening</option><option value="weekend">Weekend</option></select></label><br>
+
+<label>Learning: <input type="radio" name="mode" value="online" required>Online
+<input type="radio" name="mode" value="offline">Offline
+<input type="radio" name="mode" value="hybrid">Hybrid</label><br>
+
+<label>Skills: <input type="checkbox" name="skill" value="java">Java
+<input type="checkbox" name="skill" value="python">Python
+<input type="checkbox" name="skill" value="web">Web
+<input type="checkbox" name="skill" value="ds">DS
+<input type="checkbox" name="skill" value="db">Database</label><br>
+
+<label>Education: <input type="text" name="education" required></label><br>
+<label>College: <input type="text" name="college" required></label><br>
+<label>Semester/Year: <input type="text" name="semester" required></label><br>
+<label>Experience: <input type="number" name="experience" min="0" max="20" step="1"></label><br>
+<label>GitHub: <input type="url" name="github" placeholder="https://github.com/"></label><br>
+<label>Learning Goals: <textarea name="goals" maxlength="300"></textarea></label><br>
+
+<input type="checkbox" id="confirm" name="confirm" value="yes" required>
+<label for="confirm">I confirm my details are correct.</label><br>
+<input type="submit" value="Submit"> <input type="reset" value="Reset">
+
+</form>
+</body>
+</html>
