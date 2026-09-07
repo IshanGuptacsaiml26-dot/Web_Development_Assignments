@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Delivery Portal</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Food Corner</h1>
+    <p>Fresh food, great taste!</p>
+</header>
+
+<nav>
+    <a href="#menu">Menu</a> |
+    <a href="#about">About</a> |
+    <a href="#order">Order</a>
+</nav>
+
+<main>
+
+<section id="about">
+    <h2>About Our Restaurant</h2>
+    <p>Food Corner serves <strong>fresh and tasty food</strong> every day.</p>
+
+    <figure>
+        <img src="food.jpg" alt="Fresh food served at Food Corner" width="300">
+        <figcaption>Our delicious food</figcaption>
+    </figure>
+
+    <article>
+        <h3>Chef Story</h3>
+        <p>Chef Aman loves creating simple and delicious recipes.</p>
+        <blockquote>"Good food brings people together."</blockquote>
+    </article>
+
+    <p><a href="https://www.zomato.com/">Visit Food Delivery</a></p>
+</section>
+
+<section>
+    <h2>Menu Categories</h2>
+
+    <ul>
+        <li>Starters</li>
+        <li>Main Course</li>
+        <li>Drinks</li>
+        <li>Desserts</li>
+    </ul>
+
+    <h3>Kitchen Video</h3>
+    <video width="350" controls muted loop>
+        <source src="kitchen.mp4" type="video/mp4">
+    </video>
+
+    <h3>Chef Message</h3>
+    <audio controls>
+        <source src="chef.mp3" type="audio/mpeg">
+    </audio>
+
+    <h3>Restaurant Location</h3>
+    <iframe src="https://www.google.com/maps"
+        width="400" height="250" title="Restaurant location"></iframe>
+</section>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+
+    <table border="1">
+        <caption>Food Menu</caption>
+        <tr>
+            <th>Item</th>
+            <th>Category</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Availability</th>
+            <th>Description</th>
+        </tr>
+
+        <tr><td>Paneer Tikka</td><td>Starter</td><td>Veg</td><td>&#8377;180</td><td>Yes</td><td>Grilled paneer</td></tr>
+        <tr><td>Spring Roll</td><td>Starter</td><td>Veg</td><td>&#8377;120</td><td>Yes</td><td>Crispy rolls</td></tr>
+        <tr><td>Veg Biryani</td><td>Main</td><td>Veg</td><td>&#8377;200</td><td>Yes</td><td>Rice with vegetables</td></tr>
+        <tr><td>Butter Chicken</td><td>Main</td><td>Non-Veg</td><td>&#8377;280</td><td>Yes</td><td>Chicken curry</td></tr>
+        <tr><td>Dal Makhani</td><td>Main</td><td>Veg</td><td>&#8377;160</td><td>Yes</td><td>Creamy dal</td></tr>
+        <tr><td>Naan</td><td>Main</td><td>Veg</td><td>&#8377;50</td><td>Yes</td><td>Soft bread</td></tr>
+        <tr><td>Cold Coffee</td><td>Drink</td><td>Veg</td><td>&#8377;100</td><td>Yes</td><td>Cold coffee</td></tr>
+        <tr><td>Lemonade</td><td>Drink</td><td>Veg</td><td>&#8377;80</td><td>Yes</td><td>Fresh drink</td></tr>
+        <tr><td>Gulab Jamun</td><td>Dessert</td><td>Veg</td><td>&#8377;90</td><td>Yes</td><td>Sweet dessert</td></tr>
+        <tr><td>Ice Cream</td><td>Dessert</td><td>Veg</td><td>&#8377;100</td><td>Yes</td><td>Cold dessert</td></tr>
+    </table>
+</section>
+
+<section>
+    <h2>Ordering Steps</h2>
+
+    <ol>
+        <li>Choose food</li>
+        <li>Select order type</li>
+        <li>Enter details</li>
+        <li>Submit order</li>
+    </ol>
+
+    <dl>
+        <dt>Dine-in</dt><dd>Eat at the restaurant.</dd>
+        <dt>Takeaway</dt><dd>Collect your food.</dd>
+        <dt>Delivery</dt><dd>Food delivered to you.</dd>
+        <dt>Reservation</dt><dd>Book a table.</dd>
+    </dl>
+</section>
+
+<aside>
+    <h2>Today's Offer</h2>
+    <p>Get 10% off on orders above &#8377;500.</p>
+</aside>
+
+<section id="order">
+    <h2>Order / Enquiry</h2>
+
+    <form>
+        <label>Name:</label>
+        <input type="text"><br><br>
+
+        <label>Phone:</label>
+        <input type="tel"><br><br>
+
+        <label>Email:</label>
+        <input type="email"><br><br>
+
+        <label>Order Type:</label>
+        <select>
+            <option>Dine-in</option>
+            <option>Takeaway</option>
+            <option>Delivery</option>
+            <option>Reservation</option>
+        </select><br><br>
+
+        <label>Date & Time:</label>
+        <input type="datetime-local"><br><br>
+
+        <label>Item / Category:</label>
+        <input type="text"><br><br>
+
+        <label>Quantity:</label>
+        <input type="number"><br><br>
+
+        <label>Address:</label><br>
+        <textarea rows="4" cols="35"></textarea><br><br>
+
+        <label>Instructions:</label>
+        <input type="text"><br><br>
+
+        <input type="checkbox"> I agree to the terms.<br><br>
+
+        <input type="submit" value="Order">
+        <input type="reset" value="Reset">
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Food Corner &reg; &trade;</p>
+    <p>Food &amp; Service&nbsp;with Love</p>
+    <p>Price: &#8377;500</p>
+    <p>Discount: &minus;10%</p>
+    <p>Rating &ge; 4 &starf;</p>
+    <p>2 &lt; 5 and 5 &gt; 2</p>
+    <p>Offer: &#8377;500 &plusmn; 50</p>
+</footer>
+
+</body>
+</html>
